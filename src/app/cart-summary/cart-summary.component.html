@@ -1,8 +1,14 @@
 <div class="summary">
   <ul>
-    <li>Subtotal <span>$21.97</span></li>
-    <li>Tax <span>$5.00</span></li>
-    <li class="total">Total <span>$26.97</span></li>
+    <li>
+      Subtotal <span>{{ subTotal | currency }}</span>
+    </li>
+    <li>
+      Tax <span>{{ tax | currency }}</span>
+    </li>
+    <li class="total">
+      Total <span>{{ subTotal + tax | currency }}</span>
+    </li>
   </ul>
 </div>
 
