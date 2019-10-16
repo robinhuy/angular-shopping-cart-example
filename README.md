@@ -1,27 +1,13 @@
-# AngularShoppingCartExample
+# Source code ví dụ mẫu Shopping Cart viết bằng Angular 8
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
+Ứng dụng được chia nhỏ thành các Step với các Tag tương ứng.
 
-## Development server
+## Chạy ứng dụng trên môi trường development
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Cài dependencies bằng lệnh `npm install`.
 
-## Code scaffolding
+- Chạy server dev bằng lệnh `ng serve`. Server dev chạy ở địa chỉ `http://localhost:4200/` và có tự động reload trình duyệt khi code thay đổi.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Chạy ứng dụng trên môi trường production
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Chạy lệnh `ng build --prod` để build project. Code sau khi build xong sẽ nằm trong thư mục `dist/`. Đẩy code bên trong thư mục `dist` lên server có thể serve static files.
