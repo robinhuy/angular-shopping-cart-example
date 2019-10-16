@@ -1,15 +1,30 @@
 <main>
   <header class="container">
-    <app-cart-header></app-cart-header>
+    <app-cart-header [numberItems]="numberItems || 0"></app-cart-header>
   </header>
 
   <section class="container">
-    <app-product-list></app-product-list>
+    <app-product-list
+      [products]="products"
+      (onUpdateQuantity)="handleUpdateQuantity($event)"
+      (onRemoveProduct)="handleRemoveProduct($event)"
+    ></app-product-list>
+
+    <div class="empty-product" *ngIf="products.length === 0">
+      <h3>There are no products in your cart.</h3>
+      <button>Shopping now</button>
+    </div>
   </section>
 
-  <section class="container">
-    <app-promo-code></app-promo-code>
+  <section class="container" *ngIf="products.length > 0">
+    <app-promo-code
+      (onApplyPromoCode)="handleApplyPromoCode($event)"
+    ></app-promo-code>
 
-    <app-cart-summary></app-cart-summary>
+    <app-cart-summary
+      [subTotal]="subTotal"
+      [discount]="discount"
+      [tax]="tax"
+    ></app-cart-summary>
   </section>
 </main>
