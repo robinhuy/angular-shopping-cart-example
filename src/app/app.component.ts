@@ -2,13 +2,14 @@ import { Component, DoCheck } from '@angular/core';
 
 import { ProductService } from './product.service';
 import { PromoCodeService } from './promo-code.service';
+import { Product } from './product.model';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html'
 })
 export class AppComponent implements DoCheck {
-  products;
+  products: Product[];
   numberItems: number = 0;
   subTotal: number = 0;
   discountPercent: number = 0;
