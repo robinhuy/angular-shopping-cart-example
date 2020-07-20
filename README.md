@@ -1,4 +1,4 @@
-# Source code ví dụ mẫu Shopping Cart viết bằng Angular 9
+# Source code ví dụ mẫu Shopping Cart viết bằng Angular 10
 
 Ứng dụng được chia nhỏ thành các Step với các Tag tương ứng.
 
