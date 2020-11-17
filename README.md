@@ -11,3 +11,9 @@
 ## Chạy ứng dụng trên môi trường production
 
 Chạy lệnh `ng build --prod` để build project. Code sau khi build xong sẽ nằm trong thư mục `dist/`. Đẩy code bên trong thư mục `dist` lên server có thể serve static files.
+
+## Chạy automation test
+
+- Unit test: `ng test`.
+
+- E2E test: `ng e2e`.
